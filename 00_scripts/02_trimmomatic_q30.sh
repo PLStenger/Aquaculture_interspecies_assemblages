@@ -3,7 +3,7 @@
 # trimmomatic version 0.39
 # trimmomatic manual : http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf
 
-WORKING_DIRECTORY=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/01_raw_data
+WORKING_DIRECTORY=/scratch_vol1/data_fungi/ASSIST-dezip
 OUTPUT=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/03_cleaned_data
 
 ADAPTERFILE=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/99_softwares/adapters_sequences.fasta
