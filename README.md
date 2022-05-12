@@ -87,13 +87,6 @@ For install QIIME2, please refer to http://qiime.org/install/install.html
     
     # Go in the script folder
     cd 00_script
-    
-    # Try to deal with the V1V3 - V3V4 situation :
-    time nohup bash 04_fastq-cat.sh &> 04_fastq-cat.out
-
-        real	0m1.264s
-        user	0m0.039s
-        sys	    0m0.692s
 
     # Import the data in QIIME2 format
     time nohup bash 05_qiime2_import_PE.sh &> 05_qiime2_import_PE.out
