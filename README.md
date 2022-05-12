@@ -40,10 +40,10 @@ For install QIIME2, please refer to http://qiime.org/install/install.html
     # Run the first script for check the quality of your data and then for choosing the good cleanning parameters
     time nohup bash 01_quality_check_by_FastQC.sh &> 01_quality_check_by_FastQC.out
     
-        real	2m29.904s
-        user	3m14.842s
-        sys	    0m14.673s
-    
+        real    88m55,890s
+        user    107m48,092s
+        sys     3m55,322s   
+        
     # Go out of the folder
     cd ..
     
