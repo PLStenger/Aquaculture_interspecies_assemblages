@@ -1,0 +1,10 @@
+sample-id	forward-absolute-filepath	reverse-absolute-filepath
+Porifera_1_V1V3	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG1V1V3_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG1V1V3_R2.paired.fastq.gz
+Porifera_2_V1V3	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG2V1V3_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG2V1V3_R2.paired.fastq.gz
+Porifera_3_V1V3	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG3V1V3_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG3V1V3_R2.paired.fastq.gz
+Porifera_1_V4	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG1V4_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG1V4_R2.paired.fastq.gz
+Porifera_2_V4	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG2V4_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG2V4_R2.paired.fastq.gz
+Porifera_3_V4	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG3V4_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG3V4_R2.paired.fastq.gz
+Porifera_1_Chimeric	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG1_all_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG1_all_R2.paired.fastq.gz
+Porifera_2_Chimeric	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG2_all_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG2_all_R2.paired.fastq.gz
+Porifera_3_Chimeric	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG3_all_R1.paired.fastq.gz	/scratch_vol1/fungi/Porifera_eDNA_multi_marker/03_cleaned_data/BRG3_all_R2.paired.fastq.gz
