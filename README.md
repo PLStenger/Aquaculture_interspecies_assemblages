@@ -26,6 +26,15 @@ For install QIIME2, please refer to http://qiime.org/install/install.html
     sysctl hw.ncpu
     > hw.ncpu: 4
 
+### How to deal with the space problem due to too much data :  
+
+    # In the header :
+    TMPDIR=/scratch_vol1
+    
+    # After call conda, etc    
+    export TMPDIR='/scratch_vol1/fungi'
+    echo $TMPDIR
+
 ### Run scripts in local by :
 
 
