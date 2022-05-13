@@ -8,6 +8,7 @@ OUTPUT=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/05_QIIME2
 # See https://docs.qiime2.org/2018.8/tutorials/importing/
 
 MANIFEST=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/98_database_files/manifest
+TMPDIR=/scratch_vol1
 
 ###############################################################
 ### For importing your data in a Qiime2 format
@@ -21,6 +22,10 @@ conda activate qiime2-2021.4
 # Make the directory (mkdir) only if not existe already(-p)
 mkdir -p $OUTPUT/core
 mkdir -p $OUTPUT/visual
+
+# I'm doing this step in order to deal the no space left in cluster :
+export TMPDIR='/scratch_vol1/fungi'
+echo $TMPDIR
 
 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' \
 			    --input-path  $MANIFEST \
