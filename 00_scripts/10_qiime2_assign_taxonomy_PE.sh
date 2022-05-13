@@ -4,6 +4,7 @@ WORKING_DIRECTORY=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/05_QI
 OUTPUT=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/05_QIIME2/visual
 
 DATABASE=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/98_database_files
+TMPDIR=/scratch_vol1
 
 # Aim: classify reads by taxon using a fitted classifier
 
@@ -27,6 +28,9 @@ cd $WORKING_DIRECTORY
 eval "$(conda shell.bash hook)"
 conda activate qiime2-2021.4
 
+# I'm doing this step in order to deal the no space left in cluster :
+export TMPDIR='/scratch_vol1/fungi'
+echo $TMPDIR
 
 # Make the directory (mkdir) only if not existe already(-p)
 mkdir -p taxonomy
