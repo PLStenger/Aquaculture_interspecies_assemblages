@@ -7,6 +7,7 @@ METADATA=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/98_database_fi
 # negative control sample :
 #NEG_CONTROL=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/98_database_files/Negative_control_Sample_RepSeq_V4.qza
 NEG_CONTROL=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/99_contamination
+TMPDIR=/scratch_vol1
 
 # https://chmi-sops.github.io/mydoc_qiime2.html
 
@@ -21,6 +22,10 @@ cd $WORKING_DIRECTORY
 
 eval "$(conda shell.bash hook)"
 conda activate qiime2-2021.4
+
+# I'm doing this step in order to deal the no space left in cluster :
+export TMPDIR='/scratch_vol1/fungi'
+echo $TMPDIR
 
 # dada2_denoise :
 #################
