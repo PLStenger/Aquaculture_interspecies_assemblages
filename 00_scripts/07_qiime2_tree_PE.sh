@@ -2,6 +2,7 @@
 
 WORKING_DIRECTORY=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/05_QIIME2
 OUTPUT=/scratch_vol1/fungi/Aquaculture_interspecies_assemblages/05_QIIME2/visual
+TMPDIR=/scratch_vol1
 
 # Aim: construct a rooted phylogenetic tree
 
@@ -13,6 +14,10 @@ mkdir -p export/tree
 
 eval "$(conda shell.bash hook)"
 conda activate qiime2-2021.4
+
+# I'm doing this step in order to deal the no space left in cluster :
+export TMPDIR='/scratch_vol1/fungi'
+echo $TMPDIR
 
 #carry out a multiple seqeunce alignment using Mafft
  qiime alignment mafft \
