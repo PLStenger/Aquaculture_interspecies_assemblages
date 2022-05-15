@@ -99,22 +99,21 @@ For install QIIME2, please refer to http://qiime.org/install/install.html
 
     # Import the data in QIIME2 format
     time nohup bash 05_qiime2_import_PE.sh &> 05_qiime2_import_PE.out
-    
-        real	1m56.160s
-        user	0m55.588s
-        sys	    0m11.154s
-    
+        real    41m4,560s
+        user    39m38,854s
+        sys     1m29,967s
+
     # Run the Denoise
     time nohup bash 06_qiime2_denoise_PE.sh &> 06_qiime2_denoise_PE.out
-        real	66m29.579s
-        user	129m35.661s
-        sys	    4m17.156s
+        real    1401m40,630s
+        user    10347m32,928s
+        sys     39m45,571s
     
     # Run the tree construction
     time nohup bash 07_qiime2_tree_PE.sh &> 07_qiime2_tree_PE.out
-        real	8m29.501s
-        user	2m23.194s
-        sys	0m20.178s
+        real    0m9,791s
+        user    0m15,655s
+        sys     0m7,309s
     
     # Run the rarefaction
     time nohup bash 08_qiime2_rarefaction_PE.sh &> 08_qiime2_rarefaction_PE.out
