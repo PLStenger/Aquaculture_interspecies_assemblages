@@ -35,15 +35,15 @@ echo $TMPDIR
 
 # https://github.com/benjjneb/dada2/issues/477
 
-qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
---o-table core/Table.qza  \
---o-representative-sequences core/RepSeq.qza \
---o-denoising-stats core/Stats.qza \
---p-trim-left-f 0 \
---p-trim-left-r 0 \
---p-trunc-len-f 0 \
---p-trunc-len-r 0 \
---p-n-threads 4  
+#qiime dada2 denoise-paired --i-demultiplexed-seqs core/demux.qza \
+#--o-table core/Table.qza  \
+#--o-representative-sequences core/RepSeq.qza \
+#--o-denoising-stats core/Stats.qza \
+#--p-trim-left-f 0 \
+#--p-trim-left-r 0 \
+#--p-trunc-len-f 0 \
+#--p-trunc-len-r 0 \
+#--p-n-threads 4  
 
 # sequence_contamination_filter :
 #################################
