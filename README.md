@@ -111,9 +111,9 @@ For install QIIME2, please refer to http://qiime.org/install/install.html
     
     # Run the tree construction
     time nohup bash 07_qiime2_tree_PE.sh &> 07_qiime2_tree_PE.out
-        real    0m9,791s
-        user    0m15,655s
-        sys     0m7,309s
+        real    0m49,197s
+        user    0m55,185s
+        sys     0m13,526s
     
     # Run the rarefaction
     time nohup bash 08_qiime2_rarefaction_PE.sh &> 08_qiime2_rarefaction_PE.out
