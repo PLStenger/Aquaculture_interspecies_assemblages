@@ -105,17 +105,21 @@ echo $TMPDIR
 cp $DATABASE/SILVA-138-SSURef-Full-Seqs.qza taxonomy/DataSeq.qza
 cp $DATABASE/Silva-v138-full-length-seq-taxonomy.qza taxonomy/RefTaxo.qza
 
+# Script Nolwenn
+#R1_Primers = c("GTGCCAGCMGCCGCGGTAA","GTGYCAGCMGCCGCGGTAA")
+#R2_Primers = c("GGACTACHVGGGTWTCTAAT","GGACTACNVGGGTWTCTAAT")
+
 # Here only for V4 --> forward: 'GTGCCAGCMGCCGCGGTAA'  # 515f & reverse: 'GGACTACHVGGGTWTCTAAT' # 806r
-#qiime feature-classifier extract-reads --i-sequences taxonomy/DataSeq.qza \
-#        --p-f-primer 'GTGCCAGCMGCCGCGGTAA' \
-#        --p-r-primer 'TCCTCCGCTTATTGATATGC' \
-#        --o-reads taxonomy/RefSeq.qza 
+qiime feature-classifier extract-reads --i-sequences taxonomy/DataSeq.qza \
+        --p-f-primer 'GTGCCAGCMGCCGCGGTAA' \
+        --p-r-primer 'TCCTCCGCTTATTGATATGC' \
+        --o-reads taxonomy/RefSeq.qza 
 
 # Here for V1V2V3V4 --> 27F 'AGAGTTTGATCCTGGCTCAG' & reverse: 'GGACTACHVGGGTWTCTAAT' # 806r
-qiime feature-classifier extract-reads --i-sequences taxonomy/DataSeq.qza \
-        --p-f-primer 'AGAGTTTGATCCTGGCTCAG' \
-        --p-r-primer 'TCCTCCGCTTATTGATATGC' \
-        --o-reads taxonomy/RefSeq.qza         
+#qiime feature-classifier extract-reads --i-sequences taxonomy/DataSeq.qza \
+#        --p-f-primer 'AGAGTTTGATCCTGGCTCAG' \
+#        --p-r-primer 'TCCTCCGCTTATTGATATGC' \
+#        --o-reads taxonomy/RefSeq.qza         
 
 
 # Aim: Create a scikit-learn naive_bayes classifier for reads
