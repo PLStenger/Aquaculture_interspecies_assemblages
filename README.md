@@ -125,15 +125,18 @@ For install QIIME2, please refer to http://qiime.org/install/install.html
     08_qiime2_rarefaction_PE_plots.R
     
     time nohup bash 09_qiime2_calculate_and_explore_diversity_metrics_PE.sh &> 09_qiime2_calculate_and_explore_diversity_metrics_PE.out
-        real	59m0.552s
-        user	7m23.905s
-        sys	1m51.603s
+        real    3m56,363s
+        user    4m40,288s
+        sys     1m38,207s
     
     time nohup bash 10_qiime2_assign_taxonomy_PE.sh &> 10_qiime2_assign_taxonomy_PE.out
-        real	82m44.469s
-        user	74m58.003s
-        sys	    1m21.506s
+        real    61m27,887s
+        user    61m12,318s
+        sys     0m49,538s
+        
     time nohup bash 11_core_biom_PE.sh &> 11_core_biom_PE.out
-    
+        real    0m20,052s
+        user    0m25,242s
+        sys     0m9,371s
     
     time nohup bash 99_junk.sh &> 99_junk.out
